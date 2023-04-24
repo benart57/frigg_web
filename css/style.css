@@ -17,6 +17,7 @@
   box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.4);
   margin: 0 4rem;
   background-color: white;
+  font-family: "Poppins", sans-serif;
 }
 .card__icon {
   display: inline-block;
@@ -27,6 +28,7 @@
 
 .about__mission {
   display: flex;
+  margin-top: 4rem;
 }
 
 .mission {
@@ -43,16 +45,17 @@
   margin-bottom: 1.5rem;
 }
 .mission__img {
-  width: 20rem;
-  height: 18rem;
+  width: 15rem;
+  height: 15rem;
   margin: 1rem 0 0 1rem;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
 }
 .mission__small {
-  margin: 0 0 0.8rem 0.8rem;
+  margin: 0.8rem 0 0.8rem 0.8rem;
   font-size: 1.5rem;
+  display: block;
 }
 .mission__card {
   height: 30rem;
@@ -63,32 +66,17 @@
 }
 
 .buy {
-  display: flex;
-  align-items: center;
-  gap: 4rem;
   width: 70%;
   margin: 0 auto;
-  background-color: whitesmoke;
 }
-.buy__img {
-  width: 40%;
-  height: 100%;
-  border-radius: 0.8rem;
-  overflow: hidden;
-  transition: all 0.2s;
-}
-.buy__img img:hover {
-  transform: scale(1.5);
+.buy__text {
+  text-transform: uppercase;
 }
 .buy__text-header {
-  font-size: 5rem;
+  font-size: 3.5rem;
   margin-bottom: 1.2rem;
-}
-.buy__text-header2 {
-  font-size: 3rem;
-  color: rgb(81, 81, 81);
-  padding-bottom: 1.3rem;
-  border-bottom: 4px solid rgb(171, 171, 171);
+  text-align: center;
+  color: rgb(46, 46, 46);
 }
 .buy__header {
   font-size: 3.5rem;
@@ -98,7 +86,7 @@
 
 .content__header {
   font-size: 2rem;
-  margin: 0 0 0.8rem 0.8rem;
+  margin: 1rem 0 0.8rem 0.8rem;
 }
 
 .header1 {
@@ -109,6 +97,7 @@
   font-size: 1.5rem;
   margin: 1rem 0 0.8rem 0.8rem;
   line-height: 1.7;
+  color: rgb(102, 102, 102);
 }
 
 .btn:link,
@@ -147,12 +136,20 @@ body {
 }
 
 .header {
-  height: 100vh;
+  height: 70vh;
+}
+.header__box {
+  position: fixed;
+  z-index: 10000;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: antiquewhite;
   height: 10rem;
   padding-right: 2rem;
 }
@@ -163,15 +160,16 @@ body {
 }
 
 .home {
-  height: 86%;
+  height: 40%;
 }
 
 .content {
   text-align: center;
-  margin-top: 14rem;
+  margin-top: 20rem;
 }
 .content__header-nav {
   font-size: 6rem;
+  text-shadow: 0 0.8rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 .content__paragraph-nav {
   font-size: 2.5rem;

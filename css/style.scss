@@ -20,14 +20,24 @@ body {
   font-family: "Poppins", sans-serif;
 }
 .header{
-  height: 100vh;
+  height: 70vh;
+  
+  &__box {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
   &__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: antiquewhite;
     height: 10rem;
     padding-right: 2rem;
-    
+
     &-list {
       display: flex;
       gap: 2rem;
@@ -38,15 +48,16 @@ body {
 }
 
 .home {
-  height: 86%;
+  height: 40%;
 }
 
 .content {
   text-align: center;
-  margin-top: 14rem;
+  margin-top: 20rem;
 
   &__header-nav {
     font-size: 6rem;
+    text-shadow: 0 .8rem .4rem rgba( 0, 0, 0, .4);
   }
 
   &__paragraph-nav {
