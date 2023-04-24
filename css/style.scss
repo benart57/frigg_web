@@ -1,0 +1,58 @@
+@import "comb__style/mixin";
+@import "comb__style/sections";
+@import "comb__style/utilities";
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+.header{
+  height: 100vh;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10rem;
+    padding-right: 2rem;
+    
+    &-list {
+      display: flex;
+      gap: 2rem;
+      font-size: 2rem;
+    }
+
+  }
+}
+
+.home {
+  height: 86%;
+}
+
+.content {
+  text-align: center;
+  margin-top: 14rem;
+
+  &__header-nav {
+    font-size: 6rem;
+  }
+
+  &__paragraph-nav {
+    font-size: 2.5rem;
+    margin: 6rem 10rem;
+    line-height: 1.7;
+  }
+
+}
