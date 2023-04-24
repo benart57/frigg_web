@@ -4,3 +4,15 @@
   left: 50%;
   transform: translate(-50%, 50%);
 }
+
+@mixin button{
+  font-size: 1.5rem;
+  margin: .8rem;
+  display: inline-block;
+  color: rgb(0, 49, 0);
+  font-weight: 400;
+  padding: .8rem;
+  box-shadow: 0 0 .8rem rgba($color: #000000, $alpha: .4);
+  border-radius: .4rem 1rem;
+  
+}
