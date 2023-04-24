@@ -4,6 +4,7 @@
   background-color: whitesmoke;
   padding: 2rem;
   border-radius: 0.8rem;
+  margin-top: 15rem;
 }
 
 .about__section {
@@ -23,6 +24,12 @@
   display: inline-block;
   width: 6rem;
   height: 6rem;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  margin: 0.8rem 0 0 0.8rem;
   box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
 }
 
@@ -63,6 +70,7 @@
 
 .store {
   height: 700px;
+  background-color: rgb(189, 232, 251);
 }
 
 .buy {
@@ -77,11 +85,6 @@
   margin-bottom: 1.2rem;
   text-align: center;
   color: rgb(46, 46, 46);
-}
-.buy__header {
-  font-size: 3.5rem;
-  text-align: center;
-  margin: 2.5rem;
 }
 
 .content__header {
@@ -144,14 +147,25 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  background-color: white;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
 }
 .header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: antiquewhite;
   height: 10rem;
   padding-right: 2rem;
+}
+.header__nav-img {
+  margin-left: 2rem;
+  display: flex;
+  gap: 2rem;
+}
+.header__nav-img h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.8);
 }
 .header__nav-list {
   display: flex;
@@ -160,16 +174,21 @@ body {
 }
 
 .home {
-  height: 40%;
+  height: 100vh;
+  background-image: url(../images/img10.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 15rem;
+  color: white;
 }
 
 .content {
   text-align: center;
-  margin-top: 20rem;
 }
 .content__header-nav {
   font-size: 6rem;
-  text-shadow: 0 0.8rem 0.4rem rgba(0, 0, 0, 0.4);
+  text-shadow: 0 0.8rem 0.4rem rgba(122, 122, 122, 0.4);
 }
 .content__paragraph-nav {
   font-size: 2.5rem;

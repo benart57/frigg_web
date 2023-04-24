@@ -28,15 +28,28 @@ body {
     top: 0;
     left: 0;
     right: 0;
+    background-color: white;
+    box-shadow: 0 0 2rem rgba( 0, 0, 0, .5);
   }
 
   &__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: antiquewhite;
     height: 10rem;
     padding-right: 2rem;
+
+    &-img {
+      margin-left: 2rem;
+      display: flex;
+      gap: 2rem;
+    }
+
+    &-img h1 {
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      text-shadow: 0 .4rem .8rem rgba( 0, 0, 0, .8);
+    }
 
     &-list {
       display: flex;
@@ -48,16 +61,22 @@ body {
 }
 
 .home {
-  height: 40%;
+  height: 100vh;
+  background-image: url(../images/img10.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 15rem;
+  color: white;
 }
 
 .content {
   text-align: center;
-  margin-top: 20rem;
+  // margin-top: 20rem;
 
   &__header-nav {
     font-size: 6rem;
-    text-shadow: 0 .8rem .4rem rgba( 0, 0, 0, .4);
+    text-shadow: 0 .8rem .4rem rgba(122, 122, 122, 0.4);
   }
 
   &__paragraph-nav {

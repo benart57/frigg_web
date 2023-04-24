@@ -4,6 +4,7 @@
   background-color: whitesmoke;
   padding: 2rem;
   border-radius: .8rem;
+  margin-top: 15rem;
 }
 
 .about__section {
@@ -22,6 +23,10 @@
     display: inline-block;
     width: 6rem;
     height: 6rem;
+    object-position: center;
+    object-fit: cover;
+    overflow: hidden;
+    margin: .8rem 0 0 .8rem;
     box-shadow: 0 0 .3rem rgba(0, 0, 0, .2);
   }
 
@@ -71,6 +76,7 @@
 
 .store {
   height: 700px;
+  background-color: rgb(189, 232, 251);
 }
 
 .buy {
@@ -88,9 +94,6 @@
     color: rgb(46, 46, 46);
   }
 
-  &__header {
-    font-size: 3.5rem;
-    text-align: center;
-    margin: 2.5rem;
-  }
+  
+
 }
