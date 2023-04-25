@@ -146,3 +146,60 @@
 .btn {
   @include button ;
 }
+
+// news style
+.news {
+  width: 90%;
+  margin: auto;
+
+  &__header {
+    margin-bottom: 1.5rem !important;
+    font-size: 2.2rem !important;
+  }
+
+}
+
+.news__box {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 .3rem rgba(0, 0, 0, .2);
+  margin-top: 3rem;
+
+  &-img {
+    overflow: hidden;
+    width: 70%;
+    height: 20rem;
+  }
+
+}
+
+// tesimonials style
+
+.testimonials {
+  width: 90%;
+  margin: auto;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+  }
+   
+  &__container {
+    border: 2px solid black;
+    width: 98%;
+  }
+
+  &__box {
+    display: flex;
+  }
+
+  &__img {
+    overflow: hidden;
+    width: 10rem;
+    height: 8rem;
+    border-radius: .5rem;
+  }
+}

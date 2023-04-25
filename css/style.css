@@ -137,6 +137,52 @@
   border-radius: 0.4rem 1rem;
 }
 
+.news {
+  width: 90%;
+  margin: auto;
+}
+.news__header {
+  margin-bottom: 1.5rem !important;
+  font-size: 2.2rem !important;
+}
+
+.news__box {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
+  margin-top: 3rem;
+}
+.news__box-img {
+  overflow: hidden;
+  width: 70%;
+  height: 20rem;
+}
+
+.testimonials {
+  width: 90%;
+  margin: auto;
+}
+.testimonials__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.testimonials__container {
+  border: 2px solid black;
+  width: 98%;
+}
+.testimonials__box {
+  display: flex;
+}
+.testimonials__img {
+  overflow: hidden;
+  width: 10rem;
+  height: 8rem;
+  border-radius: 0.5rem;
+}
+
 .content__header {
   font-size: 2rem;
   margin: 1rem 0 0.8rem 0.8rem;
