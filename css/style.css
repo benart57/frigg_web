@@ -69,11 +69,11 @@
 }
 
 .store {
-  height: 700px;
+  height: 100%;
 }
 
 .buy {
-  width: 67%;
+  width: 95%;
   margin: 0 auto;
 }
 .buy__text {
@@ -86,10 +86,20 @@
   text-align: center;
   text-transform: uppercase;
 }
+.buy__content {
+  display: flex;
+  gap: 4rem;
+}
 .buy__card {
   display: flex;
   align-items: center;
   gap: 6rem;
+  margin-top: 4rem;
+  box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.4);
+  border-radius: 2rem;
+  padding: 1rem;
+}
+.buy__card-long {
   margin-top: 4rem;
   box-shadow: 0 0 0.8rem rgba(0, 0, 0, 0.4);
   border-radius: 2rem;
@@ -105,11 +115,15 @@
   color: rgb(28, 28, 28);
   line-height: 1.7;
   font-weight: 600;
-  font-size: 2rem;
+  font-size: 1.7rem;
   font-family: inherit;
 }
 .buy__card-text a {
   font-size: 2rem;
+}
+.buy__card-text .btn__green {
+  margin-top: 4rem;
+  padding: 2rem;
 }
 
 .btn {
@@ -147,6 +161,46 @@
   margin: 3rem 0;
   text-align: center;
   font-size: 3.5rem;
+}
+
+.btn__white {
+  position: relative;
+  transition: all 0.2s ease;
+}
+
+.btn__white:link,
+.btn__white:visited {
+  background-color: white;
+  padding: 1.5rem 4rem;
+  font-size: 2.5rem;
+  text-shadow: 0 0 4rem rgba(0, 0, 0, 0.8);
+  border-radius: 4rem;
+  font-weight: 700;
+  color: black;
+}
+
+.btn__white::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -11;
+  border-radius: 60rem;
+  background-color: #ffffff;
+  padding: 2.5rem 10rem;
+  transition: all 0.8s ease;
+}
+
+.btn__white:hover::after {
+  transform: scaleX(1.6) scaleY(1.3);
+  opacity: 0;
+}
+
+.btn__white:hover {
+  transform: translatey(-3px);
 }
 
 *,
