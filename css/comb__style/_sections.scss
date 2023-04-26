@@ -184,16 +184,19 @@
   &__grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
   }
    
   &__container {
-    border: 2px solid black;
+    box-shadow: 0 0 .6rem rgba(0, 0, 0, .4);
+    border-radius: .4rem 1.7rem;
     width: 98%;
+    padding: 1.5rem;
   }
 
   &__box {
     display: flex;
+    margin: .4rem;
   }
 
   &__img {
@@ -201,5 +204,69 @@
     width: 10rem;
     height: 8rem;
     border-radius: .5rem;
+  }
+}
+
+.column {
+  grid-row: 1 /span 3;
+  padding: 1.5rem;
+  height: 97%;
+  box-shadow: 0 .2rem 1rem rgba(0, 0, 0, .8);
+
+  &__img {
+    width: 40rem;
+    height: 20rem;
+    border-radius: .5rem;
+    overflow: hidden;
+  }
+}
+
+// contact style
+
+.contact {
+  &_text {
+    font-size: 2.1rem;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+  }
+
+  &__content {
+
+  }
+
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+
+    &-icon {
+      text-align: center;
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      background-color: #fff;
+      border: .2rem solid black;
+    }
+    
+    &-icon img {
+      margin-top: 1.8rem;
+      width: 50%;
+    }
+
+    &-text {
+      font-size: 1.2rem;
+    }
+
+    &-header {
+      text-transform: uppercase;
+      font-family: "Poppins", sans-serif;
+      padding-bottom: .4rem;
+    }
+
+    &-paragraph {
+      font-weight: 700;
+    }
+
   }
 }

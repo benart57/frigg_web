@@ -167,20 +167,71 @@
 .testimonials__grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 .testimonials__container {
-  border: 2px solid black;
+  box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.4);
+  border-radius: 0.4rem 1.7rem;
   width: 98%;
+  padding: 1.5rem;
 }
 .testimonials__box {
   display: flex;
+  margin: 0.4rem;
 }
 .testimonials__img {
   overflow: hidden;
   width: 10rem;
   height: 8rem;
   border-radius: 0.5rem;
+}
+
+.column {
+  grid-row: 1/span 3;
+  padding: 1.5rem;
+  height: 97%;
+  box-shadow: 0 0.2rem 1rem rgba(0, 0, 0, 0.8);
+}
+.column__img {
+  width: 40rem;
+  height: 20rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.contact_text {
+  font-size: 2.1rem;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.contact__box {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.contact__box-icon {
+  text-align: center;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 0.2rem solid black;
+}
+.contact__box-icon img {
+  margin-top: 1.8rem;
+  width: 50%;
+}
+.contact__box-text {
+  font-size: 1.2rem;
+}
+.contact__box-header {
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 0.4rem;
+}
+.contact__box-paragraph {
+  font-weight: 700;
 }
 
 .content__header {
@@ -206,7 +257,7 @@
 .Header {
   margin: 3rem 0;
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 3rem;
 }
 
 .btn__white {
