@@ -111,7 +111,7 @@
           </div>
           <div class="mission">
             <div class="holder">
-                <h class="content__header">our mission</h>
+                <h class="content__header holder__mission">our mission</h>
                 <small class="mission__small">
                   mission
                 </small>
@@ -127,7 +127,7 @@
           </div>
           <div class="mission">
             <div class="holder">
-                <h class="content__header">our vision</h>
+                <h class="content__header holder__mission">our vision</h>
                 <small class="mission__small">
                   vision
                 </small>
@@ -362,16 +362,16 @@
       </div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact_us" id="contact">
       <h1 class="Header">CONTACT US</h1>
       <p class="contact_text">
         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         Quas blanditiis vel quis reiciendis eaque obcaecati?
       </p>
-      <div class="contact">
+      <div class="contact contact__layout">
         <div class="contact__content">
-          <div class="contact__box">
+          <div class="contact__box box__margin">
             <div class="contact__box-icon">
               <img src="icons/icons8-location-50.png" alt="location icon">
             </div>
@@ -391,11 +391,12 @@
             <div class="contact__box-text">
               <h1 class="contact__box-header">phone call</h1>
               <p class="contact__box-paragraph">
-                Tel: 0788456872
+                Tel: +025 788456872 <br>
+                  <pre>    <span>+025 788446644</span></pre>
               </p>
             </div>
           </div>
-          <div class="contact__box">
+          <div class="contact__box box__margin">
             <div class="contact__box-icon">
               <img src="icons/icons8-circled-envelope-50.png" alt="email icon">
             </div>
@@ -411,18 +412,55 @@
         <div class="contact__form">
           <form action="" method="post">
             <div class="contact__input">
-              <input type="text" name="fname" placeholder="First Name">
-              <input type="text" name="lname" placeholder="Last Name">
+              <input type="text" name="fname" placeholder="First Name" required>
+              <input type="text" name="lname" placeholder="Last Name" required>
             </div>
             <div class="contact__input">
-              <input type="number" name="phone" placeholder="Phone Number">
+              <input type="number" name="phone" placeholder="Phone Number" required>
               <textarea type="text" placeholder="Message"></textarea>
             </div>
-            <button name="submit" type="submit">SEND</button>
+            <div class="contact__input">
+              <button name="submit" type="submit">SEND</button>
+            </div>
           </form>
         </div>
       </div>
     </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__logo">
+          <p class="content__header">logo</p>
+        </div>
+        <div class="footer__nav">
+          <div class="footer__nav-button">
+            <ul class="footer_list">
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#store">STORE</a></li>
+            </ul>
+          </div>
+          <div class="footer__nav-button">
+            <ul class="footer_list">
+              <li><a href="#home">HOME</a></li>
+              <li><a href="#about">ABOUT</a></li>
+              <li><a href="#store">STORE</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__social">
+          <div class="footer__social-icon">
+            <a href="#"><img src="icons/icon-facebook.svg" alt="icon-facebook"></a>
+          </div>
+          <div class="footer__social-icon">
+            <a href="#"><img src="icons/icon-instagram.svg" alt="instagram icon"></a>
+          </div>
+          <div class="footer__social-icon">
+            <a href="#"><img src="icons/icon-twitter.svg" alt="twitter icon"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
   </main>
 </body>
 </html>

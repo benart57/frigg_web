@@ -38,6 +38,11 @@
   margin-top: 4rem;
 }
 
+.holder__mission {
+  font-size: 1.6rem !important;
+  font-weight: 700;
+}
+
 .mission {
   padding: 1rem 2rem;
   border-radius: 10px;
@@ -52,17 +57,12 @@
   margin-bottom: 1.5rem;
 }
 .mission__img {
-  width: 15rem;
-  height: 15rem;
+  width: 10rem;
+  height: 10rem;
   margin: 1rem 0 0 1rem;
   border-radius: 50%;
   overflow: hidden;
   box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.2);
-}
-.mission__small {
-  margin: 0.8rem 0 0.8rem 0.8rem;
-  font-size: 1.5rem;
-  display: block;
 }
 .mission__card {
   height: 30rem;
@@ -73,14 +73,14 @@
 }
 
 .buy {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 }
 .buy__text {
   text-transform: uppercase;
 }
 .buy__text-header {
-  font-size: 2.4rem;
+  font-size: 2rem;
   letter-spacing: 0.2rem;
   margin-bottom: 1.2rem;
   text-align: center;
@@ -107,23 +107,23 @@
 }
 .buy__card-img {
   overflow: hidden;
-  width: 43rem;
-  height: 26rem;
+  width: 32rem;
+  height: 20rem;
   border-radius: 0.6rem;
 }
 .buy__card-text p {
   color: rgb(28, 28, 28);
   line-height: 1.7;
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: 1.3rem;
   font-family: inherit;
 }
 .buy__card-text a {
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 .buy__card-text .btn__green {
   margin-top: 4rem;
-  padding: 2rem;
+  padding: 1.5rem 2rem;
 }
 
 .btn {
@@ -199,16 +199,35 @@
   overflow: hidden;
 }
 
+.contact__layout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../../images/img7.2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80%;
+  margin: auto;
+  margin-top: 1rem;
+  border-radius: 2rem;
+  padding: 2rem;
+}
 .contact_text {
-  font-size: 2.1rem;
-  width: 90%;
+  font-size: 1.7rem;
+  line-height: 1.7;
+  letter-spacing: 0.1rem;
+  width: 70%;
   margin: auto;
   text-align: center;
+}
+.contact__content {
+  width: 50%;
 }
 .contact__box {
   display: flex;
   align-items: center;
-  gap: 0.8rem;
+  justify-content: center;
+  gap: 2rem;
 }
 .contact__box-icon {
   text-align: center;
@@ -216,48 +235,88 @@
   height: 8rem;
   border-radius: 50%;
   background-color: #fff;
-  border: 0.2rem solid black;
+}
+.contact__box-icon:not(:last-child) {
+  margin-bottom: 1rem;
 }
 .contact__box-icon img {
   margin-top: 1.8rem;
   width: 50%;
 }
 .contact__box-text {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 .contact__box-header {
+  font-weight: 400;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   padding-bottom: 0.4rem;
 }
 .contact__box-paragraph {
+  font-size: 1.4rem;
+}
+.contact__form {
+  width: 50%;
+}
+.contact__input {
+  width: 60%;
+  margin: auto;
+}
+.contact__input input, .contact__input textarea {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1.4rem;
+  font-size: 1.7rem;
+  border: none;
+  outline: none;
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.8);
+  border-radius: 0.4rem;
+  border-bottom: 0.2rem solid transparent;
+}
+.contact__input input:focus {
+  border-bottom: 0.2rem solid black;
+}
+.contact__input button {
+  padding: 1.5rem 6rem;
+  margin-top: 1rem;
+  box-shadow: 0 0.2rem 0.8rem rgba(47, 47, 47, 0.8);
+  border-radius: 0.8rem;
+  border: none;
+  font-size: 1.7rem;
   font-weight: 700;
 }
 
 .content__header {
-  font-size: 2rem;
+  font-size: 1.4rem;
   margin: 1rem 0 0.8rem 0.8rem;
 }
 
 .header1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 .content__paragraph {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   margin: 1rem 0 0.8rem 0.8rem;
   line-height: 1.7;
   color: rgb(102, 102, 102);
 }
 
+.mission__small {
+  margin: 0.8rem 0 0.8rem 0.8rem;
+  font-size: 1.2rem;
+  display: block;
+}
+
 .top_margin {
-  margin-top: 6rem;
+  margin-top: 3rem;
 }
 
 .Header {
-  margin: 3rem 0;
+  margin: 2rem 0;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 .btn__white {
@@ -269,7 +328,8 @@
 .btn__white:visited {
   background-color: white;
   padding: 1.5rem 4rem;
-  font-size: 2.5rem;
+  text-transform: uppercase;
+  font-size: 2rem;
   text-shadow: 0 0 4rem rgba(0, 0, 0, 0.8);
   border-radius: 4rem;
   font-weight: 700;
@@ -300,6 +360,10 @@
   transform: translatey(-3px);
 }
 
+.box__margin {
+  margin-left: 3.8rem;
+}
+
 *,
 *::after,
 *::before {
@@ -319,7 +383,8 @@ body {
 }
 
 .header {
-  height: 70vh;
+  height: 76vh;
+  margin-bottom: -3rem;
 }
 .header__box {
   position: fixed;
@@ -367,11 +432,12 @@ body {
   text-align: center;
 }
 .content__header-nav {
-  font-size: 6rem;
+  font-size: 4rem;
   text-shadow: 0 0.8rem 0.4rem rgba(122, 122, 122, 0.4);
+  margin-top: 6rem;
 }
 .content__paragraph-nav {
-  font-size: 2.5rem;
-  margin: 6rem 10rem;
+  font-size: 2.1rem;
+  margin: 4rem 15rem;
   line-height: 1.7;
 }/*# sourceMappingURL=style.css.map */

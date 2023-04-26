@@ -37,6 +37,11 @@
   margin-top: 4rem;
 }
 
+.holder__mission {
+  font-size: 1.6rem !important;
+  font-weight: 700;
+}
+
 .mission {
   padding: 1rem 2rem;
   border-radius: 10px;
@@ -52,18 +57,12 @@
   }
 
   &__img {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
     margin: 1rem 0 0 1rem;
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 0 0 .3rem rgba(0, 0, 0, .2);
-  }
-
-  &__small {
-    margin: .8rem 0 .8rem .8rem;
-    font-size: 1.5rem;
-    display: block;
   }
   
   &__card {
@@ -79,7 +78,7 @@
 }
 
 .buy {
-  width: 95%;
+  width: 90%;
   margin: 0 auto;
 
   &__text {
@@ -87,7 +86,7 @@
   }
 
   &__text-header {
-    font-size: 2.4rem;
+    font-size: 2rem;
     letter-spacing: .2rem;
     margin-bottom: 1.2rem;
     text-align: center;
@@ -117,8 +116,8 @@
 
     &-img {
       overflow: hidden;
-      width: 43rem;
-      height: 26rem;
+      width: 32rem;
+      height: 20rem;
       border-radius: .6rem;
     }
 
@@ -126,17 +125,17 @@
       color: rgb(28, 28, 28) ;
       line-height: 1.7;
       font-weight: 600;
-      font-size: 1.7rem;
+      font-size: 1.3rem;
       font-family: inherit;
     }
 
     &-text a {
-      font-size: 2rem;
+      font-size: 1.3rem;
     }
 
     &-text .btn__green {
       margin-top: 4rem;
-      padding: 2rem
+      padding: 1.5rem 2rem
     }
 
   }
@@ -224,21 +223,39 @@
 // contact style
 
 .contact {
+  &__layout {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.8),
+         rgba(255, 255, 255, 0.8)), url(../../images/img7.2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    margin: auto;
+    margin-top: 1rem;
+    border-radius: 2rem;
+    padding: 2rem;
+  }
+
   &_text {
-    font-size: 2.1rem;
-    width: 90%;
+    font-size: 1.7rem;
+    line-height: 1.7;
+    letter-spacing: .1rem;
+    width: 70%;
     margin: auto;
     text-align: center;
   }
 
   &__content {
-
+    width: 50%;
   }
 
   &__box {
     display: flex;
     align-items: center;
-    gap: .8rem;
+    justify-content: center;
+    gap: 2rem;
 
     &-icon {
       text-align: center;
@@ -246,7 +263,10 @@
       height: 8rem;
       border-radius: 50%;
       background-color: #fff;
-      border: .2rem solid black;
+    }
+
+    &-icon:not(:last-child) {
+      margin-bottom: 1rem;
     }
     
     &-icon img {
@@ -255,18 +275,57 @@
     }
 
     &-text {
-      font-size: 1.2rem;
+      font-size: 1.3rem;
     }
 
     &-header {
+      font-weight: 400;
       text-transform: uppercase;
       font-family: "Poppins", sans-serif;
       padding-bottom: .4rem;
     }
 
     &-paragraph {
-      font-weight: 700;
+      font-size: 1.4rem;
     }
 
   }
+
+  &__form {
+    width: 50%;
+  }
+
+  &__input {
+    width: 60%;
+    margin: auto;
+  }
+
+  &__input input,
+  &__input textarea {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.4rem;
+    font-size: 1.7rem;
+    border: none;
+    outline: none;
+    box-shadow: 0 .2rem .4rem rgba(0, 0, 0, .8);
+    border-radius: .4rem;
+    border-bottom: .2rem solid transparent;
+  }
+
+  &__input input:focus {
+    border-bottom: .2rem solid black;
+  }
+
+  &__input button {
+    padding: 1.5rem 6rem;
+    margin-top: 1rem;
+    box-shadow: 0 .2rem .8rem rgba(47, 47, 47, 0.8);
+    border-radius: .8rem;
+    border: none;
+    font-size: 1.7rem;
+    font-weight: 700;
+  }
+
 }
