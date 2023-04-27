@@ -17,7 +17,6 @@
   box-shadow: 0 0 .3rem rgba(0, 0, 0, .4);
   margin: 0 4rem;
   background-color: white;
-  font-family: "Poppins",sans-serif;
 
   &__icon {
     display: inline-block;
@@ -86,7 +85,7 @@
   }
 
   &__text-header {
-    font-size: 2rem;
+    font-size: 1.4rem;
     letter-spacing: .2rem;
     margin-bottom: 1.2rem;
     text-align: center;
@@ -126,7 +125,6 @@
       line-height: 1.7;
       font-weight: 600;
       font-size: 1.3rem;
-      font-family: inherit;
     }
 
     &-text a {
@@ -227,8 +225,8 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.8),
-         rgba(255, 255, 255, 0.8)), url(../../images/img7.2.jpg);
+    background-image: linear-gradient(rgba(169, 215, 197, 0.8),
+         rgba(255, 255, 255, 0.8));
     background-repeat: no-repeat;
     background-size: cover;
     width: 80%;
@@ -239,10 +237,10 @@
   }
 
   &_text {
-    font-size: 1.7rem;
+    font-size: 1.4rem;
     line-height: 1.7;
-    letter-spacing: .1rem;
-    width: 70%;
+    // letter-spacing: .1rem;
+    width: 50%;
     margin: auto;
     text-align: center;
   }
@@ -281,7 +279,6 @@
     &-header {
       font-weight: 400;
       text-transform: uppercase;
-      font-family: "Poppins", sans-serif;
       padding-bottom: .4rem;
     }
 
@@ -328,4 +325,65 @@
     font-weight: 700;
   }
 
+}
+//  footer style
+
+.footer {
+  background-color: #292929;
+  margin-top: 2rem;
+  padding: 3.5rem 3rem;
+  color: rgb(183, 183, 183);
+
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    padding: 2rem;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    justify-content: space-between;
+  }
+
+  &__list a {
+    font-size: 1.4rem;
+    display: inline-block;
+    margin-bottom: 1.4rem;
+    font-weight: 400;
+    color: rgb(183, 183, 183);
+  }
+
+  &__header {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    width: 15%;
+    align-self: center;
+
+    &-icon {
+      text-align: center;
+      padding-top: .8rem;
+      background-color: #919191;
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+    }
+
+  }
+  &__copy {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-top: 1.2rem;
+  }
 }

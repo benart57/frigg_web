@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import "comb__style/mixin";
 @import "comb__style/sections";
 @import "comb__style/utilities";
@@ -17,8 +18,9 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
 }
+
 .header{
   height: 76vh;
   margin-bottom: -3rem;
@@ -37,7 +39,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 10rem;
+    height: 7rem;
     padding-right: 2rem;
 
     &-img {
@@ -47,18 +49,31 @@ body {
     }
 
     &-img h1 {
-      font-size: 2.5rem;
+      font-size: 2.1rem;
       text-transform: uppercase;
-      text-shadow: 0 .4rem .8rem rgba( 0, 0, 0, .8);
+      // text-shadow: 0 .4rem .8rem rgba( 0, 0, 0, .8);
     }
 
     &-list {
       display: flex;
       gap: 2rem;
-      font-size: 2rem;
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+
+    &-button {
+      padding: 0 .8rem;
+      font-size: 1.6rem;
+      font-weight: 400;
+      background-color: transparent;
+      border: none;
+      color: rgb(1, 106, 176);
+      align-self: center;
+      cursor: pointer;
     }
 
   }
+
 }
 
 .home {
@@ -82,7 +97,7 @@ body {
   }
 
   &__paragraph-nav {
-    font-size: 2.1rem;
+    font-size: 1.8rem;
     margin: 4rem 15rem;
     line-height: 1.7;
   }
